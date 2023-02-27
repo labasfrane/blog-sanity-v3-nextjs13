@@ -40,8 +40,8 @@ async function Post({ params: { slug } }: Props) {
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
             <Image
               className="object-cover object-center mx-auto"
-              src={urlFor(post?.mainImage).url()}
-              alt={post?.author.name}
+              src={urlFor(post?.mainImage)?.url()}
+              alt={post?.author?.name}
               fill
             />
           </div>
