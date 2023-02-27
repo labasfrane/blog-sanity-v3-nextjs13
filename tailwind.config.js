@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "bg-embrio": "url('/embrio.png')",
+        "bg-embrio": "url('static/images/embrio.png')",
       },
     },
   },

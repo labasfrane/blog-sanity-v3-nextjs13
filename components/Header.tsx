@@ -9,7 +9,7 @@ export const Header = () => {
         <Link href="/">
           <Image
             className="bg-inherit"
-            src="/hdepo-logo.png"
+            src="/static/images/hdepo-logo.png"
             width={100}
             height={100}
             alt="hdepo logo"
