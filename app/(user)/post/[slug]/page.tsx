@@ -5,7 +5,7 @@ import { RichTextComponents } from "../../../../components/RichTextComponents";
 import { client } from "../../../../lib/sanity.client";
 import urlFor from "../../../../lib/urlFor";
 
-// export const revalidate = 60;
+export const revalidate = 60;
 
 export async function generateStaticParams() {
   const query = groq`*[_type=='post']
@@ -16,9 +16,9 @@ export async function generateStaticParams() {
   const slugs: Post[] = await client.fetch(query);
   const slugRoutes = slugs.map((slug) => slug.slug.current);
 
-  return slugRoutes.map((slug) => {
-    slug;
-  });
+  return slugRoutes.map((slug) => ({
+    slug: slug,
+  }));
 }
 
 async function Post({ params: { slug } }: Props) {
