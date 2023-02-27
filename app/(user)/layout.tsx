@@ -12,7 +12,7 @@ export default function RootLayout({
     <html>
       <body className="max-w-7xl mx-auto">
         <Header />
-        <Banner />
+        <Banner isOpen={false} />
         {children}
         <Footer />
       </body>

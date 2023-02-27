@@ -3,12 +3,12 @@ import Image from "next/image";
 const Logo = (props: any) => {
   const { renderDefault, title } = props;
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center space-x-1">
       <Image
         className="rounded-full object-cover"
-        height={50}
-        width={50}
-        src="https://freesvg.org/img/human_embryo.png"
+        height={85}
+        width={85}
+        src="/hdepo-logo.png"
         alt="logo"
       />
       <>{renderDefault(props)}</>

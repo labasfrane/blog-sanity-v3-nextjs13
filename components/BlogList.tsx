@@ -8,7 +8,6 @@ type Props = {
 };
 
 const BlogList = ({ posts }: Props) => {
-  // console.log(posts.length);
   return (
     <div className="mb-2">
       <h2 className="mb-8 py-3 text-center font-medium border-b">

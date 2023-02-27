@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 
-const Banner = () => {
-  const [showFullText, setShowFullText] = useState(false);
+const Banner = ({ isOpen = false }: Props) => {
+  const [showFullText, setShowFullText] = useState(isOpen);
   function toggleText() {
     setShowFullText(!showFullText);
   }
@@ -52,6 +52,10 @@ const Banner = () => {
       </button>
     </div>
   );
+};
+
+type Props = {
+  isOpen: boolean;
 };
 
 export default Banner;
