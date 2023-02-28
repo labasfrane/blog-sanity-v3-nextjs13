@@ -10,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className="max-w-7xl mx-auto">
+      <body className="max-w-7xl mx-auto bg-neutral-50">
         <Header />
         <Banner isOpen={false} />
         {children}

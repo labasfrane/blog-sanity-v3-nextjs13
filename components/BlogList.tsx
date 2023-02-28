@@ -10,11 +10,11 @@ type Props = {
 const BlogList = ({ posts }: Props) => {
   return (
     <div className="mb-2">
-      <h2 className="mb-8 py-3 text-center font-medium border-b">
+      <h2 className="mb-8 py-3 text-center font-medium border-b border-neutral-400 bg-gradient-to-t from-neutral-00">
         Najnovije vijesti
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-4 sm:px-5 md:px-7 gap-10 gap-y-16 pb-24">
         {posts.map((post) => (
           <ClientSideRoute
             key={post?._id}
@@ -30,7 +30,7 @@ const BlogList = ({ posts }: Props) => {
                 />
                 <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-white p-5 flex justify-between">
                   <div>
-                    <p>{post?.title}</p>
+                    {/* <p>{post?.title}</p> */}
                     <p>
                       {new Date(post?._createdAt).toLocaleDateString("en-US", {
                         day: "numeric",

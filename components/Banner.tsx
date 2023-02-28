@@ -9,7 +9,7 @@ const Banner = ({ isOpen = false }: Props) => {
   }
 
   return (
-    <div className="mb-2 px-5 md:px-10 py-10 bg-bg-embrio bg-center bg-fixed flex flex-col drop-shadow-2xl">
+    <div className="mb-2 px-4 sm:px-5 md:px-7 py-10 bg-bg-embrio bg-center bg-fixed flex flex-col">
       <h2 className="mb-8 text-center font-semibold md:text-start md:text-3xl text-white">
         Hrvatsko društvo za embriologiju i potpomognutu oplodnju
       </h2>
@@ -46,7 +46,7 @@ const Banner = ({ isOpen = false }: Props) => {
       </p>
       <button
         onClick={toggleText}
-        className="text-white md:hidden block text-xs mt-2 ml-auto mr-2 border-2 rounded-md px-4 py-2"
+        className="text-white md:hidden block text-xs mt-2 ml-auto border-2 rounded-md px-5 py-3 backdrop-blur-sm"
       >
         {showFullText ? "X" : "Više"}
       </button>
