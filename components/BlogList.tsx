@@ -9,8 +9,8 @@ type Props = {
 
 const BlogList = ({ posts }: Props) => {
   return (
-    <div className="mb-2">
-      <h2 className="mb-8 py-3 text-center font-medium border-b border-neutral-400 bg-gradient-to-t from-neutral-00">
+    <div className="">
+      <h2 className="uppercase mb-8 py-4 text-center font-medium border-b border-neutral-400 bg-gradient-to-t from-neutral-100">
         Najnovije vijesti
       </h2>
 
@@ -59,10 +59,10 @@ const BlogList = ({ posts }: Props) => {
                 </p>
               </div>
 
-              <p className="flex font-bold">
+              {/* <p className="flex font-bold">
                 Read Post
                 <ArrowUpRightIcon className="ml-2 h-4 w-4" />
-              </p>
+              </p> */}
             </div>
           </ClientSideRoute>
         ))}

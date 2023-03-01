@@ -9,7 +9,7 @@ const Banner = ({ isOpen = false }: Props) => {
   }
 
   return (
-    <div className="mb-2 px-4 sm:px-5 md:px-7 py-10 bg-bg-embrio bg-center bg-fixed flex flex-col">
+    <div className="px-4 sm:px-5 md:px-7 py-10 bg-bg-embrio bg-center bg-fixed flex flex-col">
       <h2 className="mb-8 text-center font-semibold md:text-start md:text-3xl text-white">
         Hrvatsko društvo za embriologiju i potpomognutu oplodnju
       </h2>

@@ -8,7 +8,7 @@ const Logo = (props: any) => {
         className="rounded-full object-cover"
         height={85}
         width={85}
-        src="/hdepo-logo.png"
+        src="/static/images/hdepo-logo-white.png"
         alt="logo"
       />
       <>{renderDefault(props)}</>
