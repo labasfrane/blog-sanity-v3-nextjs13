@@ -32,7 +32,7 @@ const BlogList = ({ posts }: Props) => {
                   <div>
                     {/* <p>{post?.title}</p> */}
                     <p>
-                      {new Date(post?._createdAt).toLocaleDateString("en-US", {
+                      {new Date(post?._createdAt).toLocaleDateString("hr-HR", {
                         day: "numeric",
                         month: "long",
                         year: "numeric",
