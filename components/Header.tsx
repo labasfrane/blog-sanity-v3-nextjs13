@@ -18,9 +18,17 @@ export const Header = () => {
           hdepo
         </h1>
       </div>
-      <Link href="/studio">
-        <UserIcon className="h-5 w-5 sm:h-6 sm:w-6 mx-1" />
+
+      <Link
+        className="uppercase underline underline-offset-2 mx-1 text-xs sm:text-base text-center text-clip hover:underline-offset-4 ease-out duration-150"
+        href="/documents"
+      >
+        Dokumenti društva
       </Link>
+      {/* <Link href="/studio">
+          <UserIcon className="h-5 w-5 sm:h-6 sm:w-6 mx-1" />
+          Login
+        </Link> */}
     </header>
   );
 };
